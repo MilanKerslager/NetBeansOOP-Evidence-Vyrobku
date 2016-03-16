@@ -20,5 +20,16 @@ public class SeznamVyrobku {
         nasklade[0] = new Sklad("Jouda-2000", 30);
         nasklade[0].vytiskniSe();
         
+        // test seznamu výrobků pro dynamický seznam
+        // použijeme ArrayList
+        ArrayList<Sklad> seznam = new ArrayList<>();
+        seznam.add(new Sklad("Bouda-2017", 300));
+        seznam.get(0).vytiskniSe();
+        // zkusíme více položek do ArrayListu
+        seznam.add(new Sklad("Kouda-2024", 169));
+        seznam.add(new Sklad("Moula-1994", 7));
+        for (Sklad i: seznam) {
+            i.vytiskniSe();
+        }
     }
 }
